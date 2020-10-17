@@ -6,6 +6,7 @@
 // @author       ViniDalvino
 // @match        https://meet.google.com/*
 // @grant        none
+// @updateURL    https://raw.githubusercontent.com/ViniDalvino/global-google-meet-toggle-mic-and-cam/main/client.js
 // ==/UserScript==
 
 
