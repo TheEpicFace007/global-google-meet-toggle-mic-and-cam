@@ -1,0 +1,17 @@
+{
+  "name": "global-google-meet-toggle-mic-and-cam",
+  "version": "1.0.0",
+  "description": "Have global hotkey for google meet",
+  "main": "server.js",
+  "dependencies": {
+    "iohook": "^0.6.6",
+    "websocket": "^1.0.32"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test.js",
+    "start": "node server.js"
+  },
+  "author": "Vini Dalvino",
+  "license": "GPL-3.0-or-later"
+}
