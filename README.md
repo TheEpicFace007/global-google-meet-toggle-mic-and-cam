@@ -1,7 +1,7 @@
 # global-google-meet-toggle-mic-and-cam
 Globally toggle the camera and the mic from any application for google meet
 # Instalation guide
-1. Install node js
+1. Install node js and the browser tempermonkey if not done already
 2. clone the repo
 3. open a terminal that is located in the directory  of the cloned repo
 4. on your teerminal, type `npm install`. wait for npm to install the requirements
