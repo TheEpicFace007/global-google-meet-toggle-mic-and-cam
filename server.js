@@ -35,9 +35,12 @@ wsServer.on('request', function (request) {
         return;
     }
 
+    let is_disconnected  = false;
     var connection = request.accept('echo-protocol', request.origin);
 
     iohook.on("keyup", function (key) {
+        if (is_disconnected)
+            return
         if (key.ctrlKey == true && key.keycode == 32) {
             connection.sendUTF("TOGGLE_MIC");
             console.log(`${new Date()} | Toggled the mic`)
@@ -62,6 +65,7 @@ wsServer.on('request', function (request) {
     });
 
     connection.on('close', function (reasonCode, description) {
+        is_disconnected = true
         console.log((new Date()) + ' Peer ' + connection.remoteAddress + ' disconnected.');
     });
 
